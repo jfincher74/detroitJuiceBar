@@ -61,11 +61,11 @@
         ],
         "shots": [
             {
-                "item": "Immune Defense",
+                "item": "#1 Immune Defense",
                 "price": "$3.00"
             },
             {
-                "item": "#1 with a kick of apple cider vinegar",
+                "item": "#1 w/ apple cider vinegar",
                 "price": "$3.50"
             }
         ],
