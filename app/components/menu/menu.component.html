@@ -1,11 +1,11 @@
-<div class="container" style="margin-bottom: 24px" *ngIf="!isLoading.value">
+<div style="margin-bottom: 24px" *ngIf="!isLoading.value">
     <div class="row">
         <div class="panel panel-default">
             <div class="panel-heading" (click)="toggleSmoothies()">
-                <h5>Smoothies & Shakes <small> $7.50 | $8.50  </small>
+                <h4>Smoothies & Shakes <small> $7.50 | $8.50  </small>
                     <span *ngIf=(!smoothiesActive) class="glyphicon glyphicon-menu-down pull-right" aria-hidden="true"></span>
                     <span *ngIf=(smoothiesActive) class="glyphicon glyphicon-menu-up pull-right" aria-hidden="true"></span>
-                </h5>
+                </h4>
             </div>
             <div class="panel panel-default" *ngIf=(smoothiesActive)>
                 <ul class="list-group" *ngFor="let items of item.smoothies">
@@ -17,10 +17,10 @@
     <div class="row">
         <div class="panel panel-default">
             <div class="panel-heading" (click)="toggleJuices()">
-                <h5>Juices <small> $7.50 | $8.50  </small>
+                <h4>Juices <small> $7.50 | $8.50  </small>
                     <span *ngIf=(!juicesActive) class="glyphicon glyphicon-menu-down pull-right" aria-hidden="true"></span>
                     <span *ngIf=(juicesActive) class="glyphicon glyphicon-menu-up pull-right" aria-hidden="true"></span>
-                </h5>
+                </h4>
             </div>
             <div class="panel panel-default" *ngIf=(juicesActive)>
                 <ul class="list-group" *ngFor="let items of item.juices">
@@ -32,10 +32,10 @@
     <div class="row">
         <div class="panel panel-default">
             <div class="panel-heading" (click)="toggleShots()">
-                <h5>Shots
+                <h4>Shots
                     <span *ngIf=(!shotsActive) class="glyphicon glyphicon-menu-down pull-right" aria-hidden="true"></span>
                     <span *ngIf=(shotsActive) class="glyphicon glyphicon-menu-up pull-right" aria-hidden="true"></span>
-                </h5>
+                </h4>
             </div>
             <div class="panel panel-default" *ngIf=(shotsActive)>
                 <ul class="list-group" *ngFor="let items of item.shots">
@@ -47,10 +47,10 @@
     <div class="row">
         <div class="panel panel-default">
             <div class="panel-heading" (click)="toggleSpikes()">
-                <h5>Spikes
+                <h4>Spikes
                     <span *ngIf=(!spikesActive) class="glyphicon glyphicon-menu-down pull-right" aria-hidden="true"></span>
                     <span *ngIf=(spikesActive) class="glyphicon glyphicon-menu-up pull-right" aria-hidden="true"></span>
-                </h5>
+                </h4>
             </div>
             <div class="panel panel-default" *ngIf=(spikesActive)>
                 <ul class="list-group" *ngFor="let items of item.spikes">
@@ -62,10 +62,10 @@
     <div class="row">
         <div class="panel panel-default">
             <div class="panel-heading" (click)="toggleDrinks()">
-                <h5>Drinks
+                <h4>Drinks
                     <span *ngIf=(!drinksActive) class="glyphicon glyphicon-menu-down pull-right" aria-hidden="true"></span>
                     <span *ngIf=(drinksActive) class="glyphicon glyphicon-menu-up pull-right" aria-hidden="true"></span>
-                </h5>
+                </h4>
             </div>
             <div class="panel panel-default" *ngIf=(drinksActive)>
                 <ul class="list-group" *ngFor="let items of item.drinks">
@@ -77,10 +77,10 @@
     <div class="row">
         <div class="panel panel-default">
             <div class="panel-heading" (click)="toggleFood()">
-                <h5>Food
+                <h4>Food
                     <span *ngIf=(!foodActive) class="glyphicon glyphicon-menu-down pull-right" aria-hidden="true"></span>
                     <span *ngIf=(foodActive) class="glyphicon glyphicon-menu-up pull-right" aria-hidden="true"></span>
-                </h5>
+                </h4>
             </div>
             <div class="panel panel-default" *ngIf=(foodActive)>
                 <ul class="list-group" *ngFor="let items of item.food">
