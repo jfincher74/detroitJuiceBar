@@ -6,17 +6,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var AboutComponent = (function () {
-    function AboutComponent() {
+var MapComponent = (function () {
+    function MapComponent() {
     }
-    return AboutComponent;
+    return MapComponent;
 }());
-AboutComponent = __decorate([
+MapComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
-        selector: 'about',
-        templateUrl: 'about.component.html'
+        selector: 'map',
+        templateUrl: 'map.component.html'
     })
-], AboutComponent);
-exports.AboutComponent = AboutComponent;
-//# sourceMappingURL=about.component.js.map
+], MapComponent);
+exports.MapComponent = MapComponent;
+//# sourceMappingURL=map.component.js.map

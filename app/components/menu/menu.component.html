@@ -1,1 +1,92 @@
-<h1>Menu Works</h1>
+<div class="container" style="margin-bottom: 72px" *ngIf="!isLoading.value">
+    <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-heading" (click)="toggleSmoothies()">
+                <h5>Smoothies & Shakes <small> $7.50 | $8.50  </small>
+                    <span *ngIf=(!smoothiesActive) class="glyphicon glyphicon-menu-down pull-right" aria-hidden="true"></span>
+                    <span *ngIf=(smoothiesActive) class="glyphicon glyphicon-menu-up pull-right" aria-hidden="true"></span>
+                </h5>
+            </div>
+            <div class="panel panel-default" *ngIf=(smoothiesActive)>
+                <ul class="list-group" *ngFor="let items of item.smoothies">
+                    <li class="list-group-item"><strong> {{ items.item }}  </strong> <small> {{ items.ingredients }}</small> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-heading" (click)="toggleJuices()">
+                <h5>Juices <small> $7.50 | $8.50  </small>
+                    <span *ngIf=(!juicesActive) class="glyphicon glyphicon-menu-down pull-right" aria-hidden="true"></span>
+                    <span *ngIf=(juicesActive) class="glyphicon glyphicon-menu-up pull-right" aria-hidden="true"></span>
+                </h5>
+            </div>
+            <div class="panel panel-default" *ngIf=(juicesActive)>
+                <ul class="list-group" *ngFor="let items of item.juices">
+                    <li class="list-group-item"><strong> {{ items.item }}  </strong> <small> {{ items.ingredients }}</small> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-heading" (click)="toggleShots()">
+                <h5>Shots
+                    <span *ngIf=(!shotsActive) class="glyphicon glyphicon-menu-down pull-right" aria-hidden="true"></span>
+                    <span *ngIf=(shotsActive) class="glyphicon glyphicon-menu-up pull-right" aria-hidden="true"></span>
+                </h5>
+            </div>
+            <div class="panel panel-default" *ngIf=(shotsActive)>
+                <ul class="list-group" *ngFor="let items of item.shots">
+                    <li class="list-group-item"><strong> {{ items.item }}  </strong> <small class="pull-right"> {{ items.price }}</small> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-heading" (click)="toggleSpikes()">
+                <h5>Spikes
+                    <span *ngIf=(!spikesActive) class="glyphicon glyphicon-menu-down pull-right" aria-hidden="true"></span>
+                    <span *ngIf=(spikesActive) class="glyphicon glyphicon-menu-up pull-right" aria-hidden="true"></span>
+                </h5>
+            </div>
+            <div class="panel panel-default" *ngIf=(spikesActive)>
+                <ul class="list-group" *ngFor="let items of item.spikes">
+                    <li class="list-group-item"><strong> {{ items.item }}  </strong> <small class="pull-right"> {{ items.price }}</small> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-heading" (click)="toggleDrinks()">
+                <h5>Drinks
+                    <span *ngIf=(!drinksActive) class="glyphicon glyphicon-menu-down pull-right" aria-hidden="true"></span>
+                    <span *ngIf=(drinksActive) class="glyphicon glyphicon-menu-up pull-right" aria-hidden="true"></span>
+                </h5>
+            </div>
+            <div class="panel panel-default" *ngIf=(drinksActive)>
+                <ul class="list-group" *ngFor="let items of item.drinks">
+                    <li class="list-group-item"><strong> {{ items.item }}  </strong> <small class="pull-right"> {{ items.price }}</small> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-heading" (click)="toggleFood()">
+                <h5>Food
+                    <span *ngIf=(!foodActive) class="glyphicon glyphicon-menu-down pull-right" aria-hidden="true"></span>
+                    <span *ngIf=(foodActive) class="glyphicon glyphicon-menu-up pull-right" aria-hidden="true"></span>
+                </h5>
+            </div>
+            <div class="panel panel-default" *ngIf=(foodActive)>
+                <ul class="list-group" *ngFor="let items of item.food">
+                    <li class="list-group-item"><strong> {{ items.item }}  </strong> <small class="pull-right"> {{ items.price }}</small> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

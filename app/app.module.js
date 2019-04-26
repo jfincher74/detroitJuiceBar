@@ -10,7 +10,6 @@ var platform_browser_1 = require("@angular/platform-browser");
 var http_1 = require("@angular/http");
 var router_1 = require("@angular/router");
 var app_component_1 = require("./app.component");
-var about_component_1 = require("./components/about/about.component");
 var home_component_1 = require("./components/home/home.component");
 var menu_component_1 = require("./components/menu/menu.component");
 var AppModule = (function () {
@@ -25,12 +24,11 @@ AppModule = __decorate([
             router_1.RouterModule.forRoot([
                 { path: 'Home', component: home_component_1.HomeComponent },
                 { path: 'Menu', component: menu_component_1.MenuComponent },
-                { path: 'About', component: about_component_1.AboutComponent },
                 { path: '', component: home_component_1.HomeComponent },
                 { path: "**", component: home_component_1.HomeComponent }
             ])
         ],
-        declarations: [app_component_1.AppComponent, menu_component_1.MenuComponent, about_component_1.AboutComponent, home_component_1.HomeComponent],
+        declarations: [app_component_1.AppComponent, menu_component_1.MenuComponent, home_component_1.HomeComponent],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);

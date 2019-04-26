@@ -1,15 +1,43 @@
-<nav class="navbar navbar-light bg-light">
-    <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link active" [routerLink]="['/Home']">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/Menu']">Menu</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/About']">About</a>
-        </li>
-    </ul>
-  </nav>
-  
-<router-outlet></router-outlet>
+<nav class="navbar navbar">
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link active" [routerLink]="['/Home']">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/Menu']">Menu</a>
+    </li>
+    <li class="nav-item">
+      <a href="https://www.facebook.com/DetroitJuiceBar/" class="fa fa-facebook socials"></a>
+    </li>
+    <li class="nav-item">
+      <a href="https://twitter.com/detroitjuicebar" class="fa fa-twitter socials"></a>
+    </li>
+    <li class="nav-item">
+      <a href="https://instagram.com/detroitjuicebar" class="fa fa-instagram socials"></a>
+    </li>
+  </ul>
+</nav> 
+<div class="container">
+  <router-outlet></router-outlet> 
+</div> 
+<div class="footer">
+    <h6 class="pull-left" style="padding-left: 12px">110 Michigan Ave, Detroit, Mi</h6>
+    <h6 class="pull-right" style="padding-right: 12px;">
+      <a href="tel:1-313-263-7885">
+        <span class="glyphicon glyphicon-phone" aria-hidden="true">
+        </span>(313) 263-7885
+      </a>
+  </h6>
+</div>
+<div></div>
+
+<style>
+  .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: black;
+      color: white;
+  }
+</style>
