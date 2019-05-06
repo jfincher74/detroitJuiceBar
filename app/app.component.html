@@ -1,19 +1,25 @@
 <nav class="navbar navbar">
   <ul class="nav nav-pills">
     <li class="nav-item">
-      <a class="nav-link active" [routerLink]="['/Home']">Home</a>
+      <a class="nav-link active" [routerLink]="['/Home']" style="font-size: 10px;">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" [routerLink]="['/Menu']">Menu</a>
+      <a class="nav-link" [routerLink]="['/Menu']" style="font-size: 10px;">Menu</a>
     </li>
     <li class="nav-item">
-      <a href="https://www.facebook.com/DetroitJuiceBar/" class="fa fa-facebook socials"></a>
+      <a href="https://www.facebook.com/DetroitJuiceBar/" class="nav-link">
+        <i class="fab fa-facebook fa-lg"></i>
+      </a>
     </li>
     <li class="nav-item">
-      <a href="https://twitter.com/detroitjuicebar" class="fa fa-twitter socials"></a>
+      <a href="https://twitter.com/detroitjuicebar" class="nav-link">
+        <i class="fab fa-twitter-square fa-lg"></i>
+      </a>
     </li>
     <li class="nav-item">
-      <a href="https://instagram.com/detroitjuicebar" class="fa fa-instagram socials"></a>
+      <a href="https://instagram.com/detroitjuicebar" class="nav-link">
+        <i class="fab fa-instagram fa-lg"></i>
+      </a>
     </li>
   </ul>
 </nav> 
@@ -40,4 +46,10 @@
       background-color: black;
       color: white;
   }
+  .navbar{
+    background-color: black;
+  }
+  .nav-item {
+     color:whitesmoke 
+    }
 </style>
