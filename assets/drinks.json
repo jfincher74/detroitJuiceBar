@@ -1,0 +1,146 @@
+{
+    "smoothies": [
+        {
+            "item": "Post Workout",
+            "ingredients": "almond milk, banana, spinach, chocolate protien"
+        },
+        {
+            "item": "The Recovery",
+            "ingredients": "coconut milk, banana, pineapple, vanilla protein"
+        },
+        {
+            "item": "Choconut Blaster",
+            "ingredients": "almond milk, banana, peanut butter, cacao, protein"
+        },
+        {
+            "item": "Davidsdottir",
+            "ingredients": "almond milk, ascent lemon protein, blueberry, banana"
+        },
+        {
+            "item": "Berry Best",
+            "ingredients": "coconut water, mixed organic berries, chia seeds"
+        },
+        {
+            "item": "Coffee Mocha",
+            "ingredients": "almond milk, coffee, banana, chocolate protein"
+        },
+        {
+            "item": "The Shake",
+            "ingredients": "almond milk, choice of protein"
+        },
+        {
+            "item": "Green Dream",
+            "ingredients": "coconut water, spinach, kale, avocado, mango, pineapple"
+        },
+        {
+            "item": "Tropical Paradis",
+            "ingredients": "coconut milk, mango, pineapple, banana, yogurt"
+        },
+        {
+            "item": "Chocalate-Mint Madness",
+            "ingredients": "almond milk, mango, pineapple, banana, yogurt"
+        },
+        {
+            "item": "Create Your Own",
+            "ingredients": ""
+        }
+        ],
+        "juices": [
+        {
+            "item": "The Immune Boost",
+            "ingredients": "tumeric, pineapple, kale, cucumber, lemon"
+        },
+        {
+            "item": "Lindsay's Greens",
+            "ingredients": "apple, kale, spinach, cilantro, cucumber, celery, lemon, ginger"
+        },
+        {
+            "item": "Sunshine",
+            "ingredients": "carrots, beets, orange"
+        }
+        ],
+        "shots": [
+            {
+                "item": "#1 Immune Defense",
+                "price": "$3.00"
+            },
+            {
+                "item": "#1 w/ apple cider vinegar",
+                "price": "$3.50"
+            }
+        ],
+        "spikes": [
+        {
+            "item": "Almond Butter",
+            "price": "$.50"
+        },
+        {
+            "item": "Peanut Butter",
+            "price": "$.50"
+        },
+        {
+            "item": "Coconut Oil",
+            "price": "$.50"
+        },
+        {
+            "item": "Chia Seeds",
+            "price": "$1.00"
+        },
+        {
+            "item": "Flax Seeds",
+            "price": "$1.00"
+        },
+        {
+            "item": "Cacao Powder",
+            "price": "$1.00"
+        },
+        {
+            "item": "Maca Powder",
+            "price": "$1.50"
+        },
+        {
+            "item": "Spirulina",
+            "price": "$1.50"
+        },
+        {
+            "item": "Protein",
+            "price": "$2.50"
+        }
+        ],
+        "drinks": [
+        {
+            "item": "Tea",
+            "price": "$2.00"
+        },
+        {
+            "item": "Coffe",
+            "price": "$2.00"
+        },
+        {
+            "item": "Keto Coffee",
+            "price": "$3.00"
+        },
+        {
+            "item": "Lemon Ginger Hottie",
+            "price": "$3.00"
+        },
+        {
+            "item": "Hot Chocolate",
+            "price": "$1.50"
+        },
+        {
+            "item": "Bang",
+            "price": "$3.00"
+        },
+        {
+            "item": "pH Water",
+            "price": "$4.50"
+        }
+        ],
+        "food": [
+        {
+            "item": "rX Bar",
+            "price": "$3.00"
+        }
+    ]
+}
