@@ -8,10 +8,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var menu_service_1 = require("./menu.service");
 var BehaviorSubject_1 = require("rxjs/BehaviorSubject");
-var MenuComponent = (function () {
+var MenuComponent = /** @class */ (function () {
     function MenuComponent(_menuService) {
         this._menuService = _menuService;
         this.smoothiesActive = false;
@@ -55,16 +56,16 @@ var MenuComponent = (function () {
         }).then(function () { return _this.isLoading.next(false); }).then(function () { return console.log(_this.isLoading.value); });
     };
     ;
+    MenuComponent = __decorate([
+        core_1.Component({
+            moduleId: module.id,
+            selector: 'djb-menu',
+            templateUrl: 'menu.component.html',
+            providers: [menu_service_1.MenuService]
+        }),
+        __metadata("design:paramtypes", [menu_service_1.MenuService])
+    ], MenuComponent);
     return MenuComponent;
 }());
-MenuComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'djb-menu',
-        templateUrl: 'menu.component.html',
-        providers: [menu_service_1.MenuService]
-    }),
-    __metadata("design:paramtypes", [menu_service_1.MenuService])
-], MenuComponent);
 exports.MenuComponent = MenuComponent;
 //# sourceMappingURL=menu.component.js.map
