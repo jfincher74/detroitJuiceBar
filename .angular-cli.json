@@ -8,7 +8,9 @@
       "root": "src",
       "outDir": "dist",
       "assets": [
-        "assets",
+        "assets/background.jpg",
+        "assets/detroitjuicebar_big.jpg",
+        "assets/drinks.json",
         "favicon.ico"
       ],
       "index": "index.html",

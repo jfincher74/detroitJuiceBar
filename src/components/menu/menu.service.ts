@@ -12,7 +12,7 @@ export class MenuService {
 
     getMenu(){
         return this._http
-        .get("../../drinks.json")
+        .get("assets/drinks.json")
         .toPromise()
         .then(res => {
             this.menu = res.json()
